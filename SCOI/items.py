@@ -8,7 +8,11 @@
 
 from scrapy.item import Item, Field
 
-class SCOIItem(Item):  
+class SCOIItem(Item): 
+    ref_url = Field()
+    partyName = Field()
+    PartyYear = Field()
+    PartyStatus = Field()
     diary_no =Field()
     case_no = Field()
     present_last = Field()
@@ -22,5 +26,6 @@ class SCOIItem(Item):
     pet_advocate = Field()
     resp_advocate = Field()
     u_section = Field()
-    pass
+    case_number = Field()
+    #pass
 
